@@ -25,8 +25,8 @@ public class No17 {
             return append(list, digits, digits.length(), map, temp);
         }
 
-        private static List<String> append(List<String> list,
-                                           String s, int length, Map<Character, Character[]> map, String temp) {
+        private List<String> append(List<String> list,
+                                    String s, int length, Map<Character, Character[]> map, String temp) {
             if (s == null || s.length() == 0) {
                 list.add("");
                 list.clear();
@@ -68,7 +68,7 @@ public class No17 {
 
     public List<String> letterCombinations(String digits) {
         List list = new ArrayList<>();
-        if(digits == null || digits.length() == 0){
+        if (digits == null || digits.length() == 0) {
             return list;
         }
 
@@ -82,9 +82,9 @@ public class No17 {
     }
 
     private void append(List<String> list, StringBuilder sb, String s, int index) {
-        if(index == s.length()){
+        if (index == s.length()) {
             list.add(sb.toString());
-        }else{
+        } else {
             for (int i = 0; i < map.get(s.charAt(index)).length; i++) {
                 StringBuilder sb2 = new StringBuilder(sb);
                 sb2.append(map.get(s.charAt(index))[i]);
