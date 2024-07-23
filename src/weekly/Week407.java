@@ -1,8 +1,6 @@
 package weekly;
 
-import util.RandomUtil;
-
-public class Weekly407 {
+public class Week407 {
     public int minChanges(int n, int k) {
         // 将n,k转换为二进制
 
@@ -90,9 +88,9 @@ public class Weekly407 {
 
 
     public static void main(String[] args) {
-        Weekly407 weekly407 = new Weekly407();
+        Week407 week407 = new Week407();
 
-        System.out.println(weekly407.minimumOperations(new int[]{9, 2, 6, 10, 4, 8, 3, 4, 2, 3}, new int[]{9, 5, 5, 1, 7, 9, 8, 7, 6, 5}));
+        System.out.println(week407.minimumOperations(new int[]{9, 2, 6, 10, 4, 8, 3, 4, 2, 3}, new int[]{9, 5, 5, 1, 7, 9, 8, 7, 6, 5}));
 //        System.out.println(weekly407.minChanges(44, 2));
 //        System.out.println(weekly407.maxOperations("10011010101"));
 //        for (int i = 0; i < 20; i++) {
